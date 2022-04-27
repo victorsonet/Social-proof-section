@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root {
+    --clr-very-dark-magenta: hsl(300, 43%, 22%);
+    --clr-soft-pink: hsl(333, 80%, 67%);
+    --clr-dark-greyish-magenta: hsl(303, 10%, 53%);
+    --clr-light-greyish-magenta: hsl(300, 24%, 96%);
+    --clr-white: hsl(0, 0%, 100%);
+    --ff-spartan: 'League Spartan';
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    position: relative;
+    font-family: var(--ff-spartan);
+    font-size: 15   px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    max-width: 80%;
+    column-gap: 3rem;
+    row-gap: 5rem;
+}
+
+.info-section {
+    grid-column: 1/2;
+    width: 75%;
+}
+
+.info-section h1 {
+    color: var(--clr-very-dark-magenta);
+    font-size: 4rem;
+}
+
+.info-section p {
+    color: var(--clr-dark-greyish-magenta);
+    font-size: 1.15rem;
+    padding-top: 1rem;
+    line-height: 1.5rem;
+}
+
+.rating-section {
+    margin-left: -1rem;
+}
+
+.rating-heading {
+    align-items: center;
+    color: var(--clr-very-dark-magenta);
+    font-size: 1.05rem;
+}
+
+.rating-heading img {
+    margin-right: .5rem;
+    align-items:flex-end;
+}
+
+.star-padding {
+    padding-right: 1.5rem;
+}
+
+.reviews-site {
+    background: var(--clr-light-greyish-magenta);
+    padding: 1rem 0 1rem 2rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    display: grid;
+    align-items: center;
+    width: 81.5%;
+}
+
+.report-guru-site {
+    background: var(--clr-light-greyish-magenta);
+    padding: 1rem 0 1rem 2rem;
+    border-radius: 10px;
+    margin: 0 0 1rem 3rem;
+    width: 81.5%;
+    display: grid;
+    align-items: center;
+}
+
+.besttech-site {
+    background: var(--clr-light-greyish-magenta);
+    padding: 1rem 0 1rem 2rem;
+    border-radius: 10px;
+    margin: 0 0 1rem 6rem;
+    width: 81.5%;
+    display: grid;
+    align-items: center;
+}
+
+.review-section {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 1/3;
+    gap: 2rem;
+}
+
+.profile-one {
+    background: var(--clr-very-dark-magenta);
+    padding: 2.5rem 2rem 2.5rem 2rem;
+    border-radius: 10px;
+}
+
+.profile-two {
+    background: var(--clr-very-dark-magenta);
+    padding: 2.5rem 2rem 2.5rem 2rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+}
+
+.profile-three {
+    background: var(--clr-very-dark-magenta);
+    padding: 2.5rem 2rem 2.5rem 2rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+}
+
+.image-name {
+    display: flex;
+    padding-bottom: 1rem;
+    width: 100%;
+}
+
+.profile-image {
+    width: 14%;
+}
+
+.profile-name {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    color: white;
+    font-weight: 700;
+    padding: .1rem 0 1rem 1.5rem;
+    letter-spacing: .05rem;
+}
+
+.verification {
+    font-weight: 400;
+    color: var(--clr-soft-pink);
+}
+
+.subtext {
+    font-weight: 400;
+    color: var(--clr-light-greyish-magenta);
+    line-height: 1.5rem;
+}
+
+.review-section img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.purple {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 1350px) and (min-width: 1200px) {
+    main {
+        max-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1150px) {
+    main {
+        max-width: 95%;
+    }
+}
+
+@media only screen and (max-width: 1150px) and (min-width: 500px) {
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 90%;
+        height: 90%;
+    }
+
+    .info-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .rating-section {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reviews-site {
+        margin: 0;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .report-guru-site {
+        margin: 0;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .besttech-site {
+        margin: 0;
+        width: 100%;
+    }
+
+    .review-section {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .review-section {
+        width: 95%;
+    }
+
+    .profile-two {
+        margin: 0;
+        width: 100%;
+    }
+
+    .profile-three {
+        margin: 0;
+    }
+
+}
+
+@media only screen and (max-width: 500px) and (min-width: 450px) {
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 90%;
+        height: 90%;
+    }
+
+    .info-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .rating-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reviews-site {
+        margin: 0;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .report-guru-site {
+        margin: 0;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .besttech-site {
+        margin: 0;
+        width: 100%;
+    }
+
+    .review-section {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .review-section {
+        width: 95%;
+    }
+
+    .profile-two {
+        margin: 0;
+        width: 100%;
+    }
+
+    .profile-three {
+        margin: 0;
+    }
+
+}
+
+@media only screen and (max-width: 450px) and (min-width: 350px) {
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 95%;
+        height: 90%;
+    }
+
+    .info-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .rating-section {
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reviews-site {
+        margin: 0;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .report-guru-site {
+        margin: 0;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .besttech-site {
+        margin: 0;
+        width: 100%;
+    }
+
+    .review-section {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .review-section {
+        width: 95%;
+    }
+
+    .profile-two {
+        margin: 0;
+        width: 100%;
+    }
+
+    .profile-three {
+        margin: 0;
+    }
+
+}
