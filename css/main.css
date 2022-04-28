@@ -32,6 +32,10 @@ main {
     row-gap: 5rem;
 }
 
+h2 {
+    font-size: 1rem;
+}
+
 .info-section {
     grid-column: 1/2;
     width: 75%;
